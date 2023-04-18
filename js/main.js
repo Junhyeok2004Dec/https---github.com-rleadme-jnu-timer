@@ -1,3 +1,7 @@
-const arr = [1,2,3];
-
-arr.forEach(console.log);
+chrome.runtime.onInstalled.addListener(({reason}) => {
+    if (reason === 'install') {
+      chrome.tabs.create({
+        url: "./html/hello.html"
+      });
+    }
+  });

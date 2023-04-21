@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var inputdata = document.getElementById("textInput");
 
+    const text = inputdata.innerText;
+
+    console.log(text);
+
     insertBtn.addEventListener("click", function() {
-        resultComponent.innerHTML = inputdata.innerText;
+        resultComponent.innerHTML = text;
 
     });
 })

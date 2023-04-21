@@ -3,14 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var insertBtn = document.getElementById("input");
     var resultComponent = document.getElementById("results");
 
-    var inputdata = document.getElementById("textInput");
 
-    const text = inputdata.innerText;
+    const text = document.getElementById
+    ('textInput').value; // 값 불러오기 안 됨
 
     console.log(text);
-
     insertBtn.addEventListener("click", function() {
-        resultComponent.innerHTML = text;
+        resultComponent.innerText = text;
 
     });
 })

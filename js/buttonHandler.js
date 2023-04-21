@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     var insertBtn = document.getElementById("input");
-    var resultComponent = document.getElementById("results");
-
-    var inputdata = document.getElementById("textInput");
 
     insertBtn.addEventListener("click", function() {
-        resultComponent.innerHTML = inputdata.innerText;
-
+        var resultComponent = document.getElementById("results");
+        
+        const text = document.getElementById
+        ('textInput').value; // 값 불러오기 안 됨
+            resultComponent.innerText = ":: 공지 :: \n" + text;
     });
-})
+
+
+    
+
+    
+});
